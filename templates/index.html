@@ -5,11 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task App</title>
+    <!--BOOTSWATCH-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sandstone/bootstrap.min.css">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lacquer&display=swap" rel="stylesheet">
+    <!--CUSTOM CSS-->
     <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
 </head>
 <body>
-    <main>
-        <h1>Hi Stranger, i love you</h1>
+    <main class="container p-4">
+        <h1 class="display-3 text-center mt-4 title color_black1">Task App</h1>
+        
+    <div class="row">
+        <div class="col-md-4 offset-md-4 my-4">
+            <div class="card back_black1"> 
+                <div class="card-header back_black1">
+                    <form action="">
+                        <div class="form-group back_black1">
+                            <input type="text" name="content" placeholder="Task" class="form-control addSize" autofocus>
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-block addSize color_black1">
+                            Save Task
+                        </button>
+                    </form>
+
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     </main>
 </body>
 </html>
