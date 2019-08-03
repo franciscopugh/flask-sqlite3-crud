@@ -20,7 +20,7 @@
         <div class="col-md-4 offset-md-4 my-4">
             <div class="card back_black1"> 
                 <div class="card-header back_black1">
-                    <form action="">
+                    <form action="/add-task" method="POST">
                         <div class="form-group back_black1">
                             <input type="text" name="content" placeholder="Task" class="form-control addSize" autofocus>
                         </div>
@@ -31,7 +31,17 @@
 
                 </div>
                 <div class="card-body">
-
+                    <ul class="list-group">
+                        {% for task in tasks %}
+                        <li class="list-group-item">
+                            {{task.content}}
+                            <div class="text-end">
+                                    <a href="" class="btn btn-success btn-sm">Done</a>
+                                    <a href="" class="btn btn-danger btn-sm">Delete</a>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>
