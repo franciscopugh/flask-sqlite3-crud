@@ -22,3 +22,8 @@ body{
 .text-end{
     text-align: end;
 }
+
+.done{
+    text-decoration: line-through;
+    color: #7B241C;
+}
